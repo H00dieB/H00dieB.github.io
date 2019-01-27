@@ -1,0 +1,25 @@
+{% if cv.others %}
+  <div id="others" class="entry">
+    <header class="entry-header">
+      <h3 class="entry-title">Others</h3>
+    </header>
+
+    <div class="entry-content">
+      {% for a in cv.others %}
+        {% if a.title %}
+          <h4 class="title">{{ a.title }}</h4>
+        {% endif %}
+        {% if a.date %}
+          <div class="date">{{ a.date }}</div>
+        {% endif %}
+        {% if a.highlights %}
+        <ul class="highlights">
+          {% for highlight in a.highlights %}
+            <li>{{ highlight }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}
