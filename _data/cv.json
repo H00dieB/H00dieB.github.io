@@ -1,234 +1,103 @@
 {
   "basics": {
-    "name": "Taehyung Kim",
-    "label": "Game, App, Interaction Developer",
+    "name": "HeeJun Gwon",
+    "label": "High School Developer",
     "picture": "",
-    "email": "taehyung0116@gmail.com",
-    "kakaotalk": "rosewrite",
+    "email": "gwonhj9751@naver.com",
+    "kakaotalk": "H00dieG",
     "website": "",
     "summary": "",
     "location": {
-      "address": "123 Sesame Street",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "Korea",
-      "region": "California"
+      "address": "None",
+      "postalCode": "None",
+      "city": "None",
+      "countryCode": "None",
+      "region": "None"
     },
     "profiles": [
       {
         "network": "Facebook",
-        "username": "김태형",
-        "url": "https://www.facebook.com/writecameo"
+        "username": "권희준",
+        "url": "https://www.facebook.com/heejun.gwon.739"
       },
       {
         "network": "GitHub",
-        "username": "catSirup",
-        "url": "https://github.com/catSirup"
+        "username": "GSM-GwonHeeJun",
+        "url": "https://github.com/GSM-GwonHeeJun"
       }
     ]
   },
   "work": [
     {
-      "company": "영우씨엔아이",
-      "position": "연구개발부 사원",
-      "website": "http://www.texclub.com/",
-      "startDate": "2018.05.08",
+      "company": "None",
+      "position": "None",
+      "website": "None",
+      "startDate": "None",
       "endDate": "",
-      "summary": "정보처리 산업기능요원",
+      "summary": "None",
       "highlights": [
-        "Unity를 활용해 편직물의 일종인 트리코트와 더블라셀을 설계하고, 설계된 데이터를 바탕으로 3D 시뮬레이션해주는 프로그램 개발",
-        "Swift와 Beacon을 활용해 스마트 파우치 앱 개발"
+        "None"
+
       ]
-    },
-    {
-      "company": "마인더스",
-      "position": "R&D팀 팀장",
-      "website": "http://www.minders.co.kr/",
-      "startDate": "2018.04.02",
-      "endDate": "2018.05.04",
-      "summary": "병역특례로 인한 퇴사",
-      "highlights": [
-        "뇌파 센서의 데이터를 활용해 Unity로 프로그램을 제작할 수 있도록 플러그인 제작",
-        "데이터를 저장할 서버와 DB 구축"
-      ]
-    },
-    {
-      "company": "d.AntWort Inc",
-      "position": "Content • Platform developer",
-      "website": "http://www.d-antwort.com/",
-      "startDate": "2016.09.01",
-      "endDate": "2018.01.31",
-      "summary": "제주도 핫스팟을 360도 카메라로 찍어, VR로 볼 수 있도록 앱 개발",
-      "highlights": [
-        "JEJU TOVR 360: Android, iOS 앱 개발",
-        "Android: https://play.google.com/store/apps/details?id=com.dantwort.JEJOTOVR&hl=ko",
-        "iOS: https://itunes.apple.com/kr/app/제주여행-필수앱-여행정보는-제주투브이알/id1225792334?mt=8(https://itunes.apple.com/kr/app/제주여행-필수앱-여행정보는-제주투브이알/id1225792334?mt=8)",
-        "화성 동탄 신도시 전시용 VR 앱 개발"
-      ]
-    }   
+    }
   ],
   "volunteer": [
     {
-      "organization": "코딩클럽 Coding Club",
-      "position": "4기 선생님",
-      "website": "http://codingclubs.org/?fbclid=IwAR2qv1wRpRnOcyMkGwg84zOWMaNZKmJqop3Kj1XYzEErCFG9UBE2yZgdJEY",
-      "startDate": "2017.03",
-      "endDate": "2017.06",
-      "summary": "초중등 학생들에게 스크래치와 앱인벤터 교육 진행",
+      "organization": "None",
+      "position": "None",
+      "website": "None",
+      "startDate": "None",
+      "endDate": "None",
+      "summary": "None",
       "highlights": [
       ]
     }
   ],
   "education": [
     {
-      "institution": "호서대학교",
-      "area": "게임학과",
-      "studyType": "4학년 1학기 수료",
-      "startDate": "2013.02",
-      "endDate": "2016.06",
-      "gpa": "3.8",
+      "institution": "광주소프트웨어마이스터고등학교",
+      "area": "소프트웨어",
+      "studyType": "1학년 과정 수료중",
+      "startDate": "None",
+      "endDate": "None",
+      "gpa": "None",
       "courses": [
       ]
     }
   ],
   "awards": [
     {
-      "title": "KOREA VR FESTIVAL 2017 NIPA 원장상",
-      "date": "2017.09.20",
-      "awarder": "NIPA(정보통신산업진흥원)",
-      "summary": "JEJUTOVR 360으로 NIPA 원장상 수상"
+      "title": "None",
+      "date": "None",
+      "awarder": "None",
+      "summary": "None"
     }
   ],
   "skills": [
     {
-      "name": "Unity",
-      "level": "Expert",
-      "keywords": [
-        "Game",
-        "App",
-        "Interaction"
-      ]
-    },
-    {
-      "name": "Database",
-      "level": "Beginner",
-      "keywords": [
-        "Postgresql",
-        "MySQL"
-      ]
-    },
-    {
-      "name": "Server",
-      "level": "Beginner",
-      "keywords": [
-        "C# Socket"
-      ]
-    },
-    {
-      "name": "AWS",
-      "level": "Beginner",
-      "keywords": [
-        "EC2",
-        "RDS",
-        "S3"
-      ]
-    },
-    {
       "name": "Language",
       "level": "IDK",
       "keywords": [
-        "C",
-        "C++",
-        "C#",
-        "Python",
-        "Swift"
+        "C"
       ]
-    },
-    {
-      "name": "Firebase",
-      "level": "IDK",
-      "keywords": [
-        "Push Notification",
-        "Analytics",
-        "Deep Link"
-      ]
-    },
-    {
-      "name": "AI",
-      "level": "IDK",
-      "keywords": [
-        "Deep learning",
-        "Tensorflow"
-      ]
-    }     
+    }
   ],
   "languages": [
     {
       "language": "한국어",
       "fluency": "매우 유창하게 함"
-    }, 
+    },
     {
       "language": "영어",
       "fluency": "조금 느리지만 비즈니스 사용 가능"
-    }, 
-    {
-      "language": "일본어",
-      "fluency": "간단한 회화 가능"
     }
   ],
   "others": [
     {
-      "title": "MAROSOFT 프로그래밍 팀장",
-      "date": "2014.09 ─ 2014.12",
+      "title": "None",
+      "date": "None",
       "highlights": [
-        "학과 내 학술 동아리 '마로소프트'에서 프로그래밍 팀장으로 부원들에게 프로그래밍 교육 및 지도."
-      ]
-    },
-    {
-      "title": "GOOD GAME SHOW KOREA 2015",
-      "date": "2015.05.29 ─ 2015.05.31",
-      "highlights": [
-        "노인들의 치매예방과 운동증진을 위한 기능성 게임 프로젝트 '팔도강산3' 부스 운영",
-        "유니티와 키넥트를 사용한 프로젝트",
-        "KBS 뉴스 취재 : http://news.kbs.co.kr/news/view.do?ref=A&ncd=3085561"
-      ]
-    },
-    {
-      "title": "2016 PlayX4(플레이엑스포)",
-      "date": "2016.05.19 ─ 2016.05.22",
-      "highlights": [
-        "노인들의 치매예방과 운동증진을 위한 기능성 게임 프로젝트 '팔도강산4' 부스 운영",
-        "유니티와 키넥트를 사용한 프로젝트"
-      ]
-    },
-    {
-      "title": "G-NEXT GAME JAM",
-      "date": "2016.08.12 ─ 2016.08.14",
-      "highlights": [
-        "참여자들 간에 팀을 구성해 48시간동안 '여름' 이라는 주제로 게임을 만듦.",
-        "프로젝트 파일 : https://gamejolt.com/games/the-world-of-awesome-juice/178254"
-      ]
-    },
-    {
-      "title": "Global Applied Game Jam 2016",
-      "date": "2016.08.24 ─ 2016.08.26",
-      "highlights": [
-        "포항공대에서 열린 48시간동안 주어진 주제로 게임을 만드는 행사",
-        "당시 행사 미션용으로 사용했던 페이스북 페이지 : https://www.facebook.com/GameJam2016MultiTap/"
-      ]
-    },
-    {
-      "title": "한국게임학회 논문 등재",
-      "date": "2016.10",
-      "highlights": [
-        "[‘키넥트2’를 이용한 노인용 걷기게임 ‘팔도강산4’의 개발] 논문 등재"
-      ]
-    },
-    {
-      "title": "IF 2017",
-      "date": "2017.09.16 ─ 2017.09.17",
-      "highlights": [
-        "'JEJU TOVR 360 Renewal' 부스 운영"
+        "None"
       ]
     }
   ]
