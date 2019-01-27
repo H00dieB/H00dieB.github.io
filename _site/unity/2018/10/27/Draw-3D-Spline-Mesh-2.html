@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<!--
+    Basically Basic Jekyll Theme 1.4.1
+    Copyright 2017-2018 Michael Rose - mademistakes.com | @mmistakes
+    Free for personal and commercial use under the MIT license
+    https://github.com/mmistakes/jekyll-basically-theme/blob/master/LICENSE
+-->
+<html lang="en-US" class="no-js">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+    <title>[Unity] 3D Spline Mesh 만들기 2 - 코드</title>
+    <meta name="description" content="0. 참조">
+    <link rel="canonical" href="http://localhost:4000/unity/2018/10/27/Draw-3D-Spline-Mesh-2.html">
+  
+
+  <script>
+    /* Cut the mustard */
+    if ( 'querySelector' in document && 'addEventListener' in window ) {
+      document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + 'js';
+    }
+  </script>
+
+  <link rel="stylesheet" href="/assets/stylesheets/main.css">
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,600,600i">
+  
+
+  
+    
+    <link rel="alternate" type="application/atom+xml" title="H00die&#39;s Blog" href="/feed.xml">
+  
+</head>
+
+
+  <body class="layout--post unity-3d-spline-mesh-만들기-2-코드">
+
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#primary-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+
+    <div class="sidebar-toggle-wrapper">
+      
+
+      <button class="toggle navicon-button larr" type="button">
+        <span class="toggle-inner">
+          <span class="sidebar-toggle-label visually-hidden">Menu</span>
+          <span class="navicon"></span>
+        </span>
+      </button>
+    </div>
+
+    <div id="sidebar" class="sidebar">
+      <div class="inner">
+        <nav id="primary-nav" class="site-nav" itemscope itemtype="http://schema.org/SiteNavigationElement" aria-label="Main navigation">
+  <ul id="menu-main-navigation" class="menu">
+    <!-- Home link -->
+    <li class="menu-item">
+      <a href="/" itemprop="url">
+        <span itemprop="name">Home</span>
+      </a>
+    </li>
+
+    <!-- site.pages links -->
+    
+    
+
+    
+      
+      
+    
+  </ul>
+</nav>
+
+        <ul class="contact-list">
+  
+    <li>
+      <a href="mailto:your-email@example.com">
+        <span class="icon icon--email"><svg xmlns="http://www.w3.org/2000/svg" viewBox="313.1 3.7 16 16"><path d="M318.5 8.9c0-.2.2-.4.4-.4h4.5c.2 0 .4.2.4.4s-.2.4-.4.4h-4.5c-.3 0-.4-.2-.4-.4zm.4 2.1h4.5c.2 0 .4-.2.4-.4s-.2-.4-.4-.4h-4.5c-.2 0-.4.2-.4.4s.1.4.4.4zm3.5 1.2c0-.2-.2-.4-.4-.4h-3.1c-.2 0-.4.2-.4.4s.2.4.4.4h3.1c.2.1.4-.1.4-.4zm-1.5-8.4l-1.7 1.4c-.2.1-.2.4 0 .6s.4.2.6 0l1.4-1.2 1.4 1.2c.2.1.4.1.6 0s.1-.4 0-.6l-1.7-1.4c-.3-.1-.5-.1-.6 0zm7.8 6.2c.1.1.1.2.1.3v7.9c0 .8-.7 1.5-1.5 1.5h-12.5c-.8 0-1.5-.7-1.5-1.5v-7.9c0-.1.1-.2.1-.3l1.6-1.3c.2-.1.4-.1.6 0s.1.4 0 .6l-1.2 1 1.8 1.3v-4c0-.6.5-1.1 1.1-1.1h7.5c.6 0 1.1.5 1.1 1.1v4l1.8-1.3-1.2-1c-.2-.1-.2-.4 0-.6s.4-.2.6 0l1.6 1.3zm-11.6 2.2l4 2.8 4-2.8V7.6c0-.1-.1-.2-.2-.2h-7.5c-.1 0-.2.1-.2.2v4.6zm10.9-1l-4.7 3.4 3.4 2.6c.2.1.2.4.1.6-.1.2-.4.2-.6.1l-3.6-2.8-1.2.8c-.1.1-.3.1-.5 0l-1.2-.8-3.6 2.8c-.2.1-.4.1-.6-.1-.1-.2-.1-.4.1-.6l3.4-2.6-4.7-3.4v7.1c0 .4.3.6.6.6h12.5c.4 0 .6-.3.6-.6v-7.1z"/></svg></span>
+        <span class="label">Email</span>
+      </a>
+    </li>
+  
+
+  
+    <li><a href="https://github.com/jekyll">
+  <span class="icon icon--github"><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M8 0C3.58 0 0 3.582 0 8c0 3.535 2.292 6.533 5.47 7.59.4.075.547-.172.547-.385 0-.19-.007-.693-.01-1.36-2.226.483-2.695-1.073-2.695-1.073-.364-.924-.89-1.17-.89-1.17-.725-.496.056-.486.056-.486.803.056 1.225.824 1.225.824.714 1.223 1.873.87 2.33.665.072-.517.278-.87.507-1.07-1.777-.2-3.644-.888-3.644-3.953 0-.873.31-1.587.823-2.147-.09-.202-.36-1.015.07-2.117 0 0 .67-.215 2.2.82.64-.178 1.32-.266 2-.27.68.004 1.36.092 2 .27 1.52-1.035 2.19-.82 2.19-.82.43 1.102.16 1.915.08 2.117.51.56.82 1.274.82 2.147 0 3.073-1.87 3.75-3.65 3.947.28.24.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.14.46.55.38C13.71 14.53 16 11.53 16 8c0-4.418-3.582-8-8-8"/></svg></span>
+  <span class="label">GitHub</span>
+</a>
+</li>
+  
+
+  
+
+  <li>
+    
+      <a href="/feed.xml" title="Atom Feed">
+        <span class="icon icon--rss"><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M12.8 16C12.8 8.978 7.022 3.2 0 3.2V0c8.777 0 16 7.223 16 16h-3.2zM2.194 11.61c1.21 0 2.195.985 2.195 2.196 0 1.21-.99 2.194-2.2 2.194C.98 16 0 15.017 0 13.806c0-1.21.983-2.195 2.194-2.195zM10.606 16h-3.11c0-4.113-3.383-7.497-7.496-7.497v-3.11c5.818 0 10.606 4.79 10.606 10.607z"/></svg></span>
+        <span class="label">Subscribe</span>
+      </a>
+    
+  </li>
+</ul>
+
+      </div>
+    </div>
+
+    <div class="canvas">
+      <div class="wrapper">
+        
+
+<header id="masthead">
+  <div class="inner">
+    <div class="title-area">
+      
+        <p class="site-title">
+          <a href="/">
+            
+            <span>H00die&#39;s Blog</span>
+          </a>
+        </p>
+      
+    </div>
+  </div>
+</header>
+
+        <div class="initial-content">
+          <header class="intro">
+  
+
+  <div class="inner">
+    <div class="intro-text">
+      <h1 id="page-title" class="intro-title">[Unity] 3D Spline Mesh 만들기 2 - 코드
+</h1>
+      
+
+      
+        
+
+        <p class="entry-meta">
+          <span class="byline-item">by devsaka</span><span class="byline-item"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="379 72 16 16"><g><g><path fill="none" d="M380.8,86.7h12.3v-8.8h-12.3V86.7z M389.5,78.8h1.7v1.4h-1.7V78.8z M389.5,81.3h1.7v1.4h-1.7V81.3z M389.5,83.8h1.7v1.4h-1.7V83.8z M386.1,78.8h1.7v1.4h-1.7V78.8z M386.1,81.3h1.7v1.4h-1.7V81.3z M386.1,83.8h1.7v1.4h-1.7V83.8z M382.8,78.8h1.7v1.4h-1.7V78.8z M382.8,81.3h1.7v1.4h-1.7V81.3z M382.8,83.8h1.7v1.4h-1.7V83.8z"/><polygon fill="none" points="384.7 75.1 383.4 75.1 383.4 74.3 380.8 74.3 380.8 76.6 393.2 76.6 393.2 74.3 390.6 74.3 390.6 75.1 389.3 75.1 389.3 74.3 384.7 74.3"/><rect x="382.8" y="78.8" width="1.7" height="1.4"/><rect x="386.1" y="78.8" width="1.7" height="1.4"/><rect x="389.5" y="78.8" width="1.7" height="1.4"/><rect x="382.8" y="81.3" width="1.7" height="1.4"/><rect x="386.1" y="81.3" width="1.7" height="1.4"/><rect x="389.5" y="81.3" width="1.7" height="1.4"/><rect x="382.8" y="83.8" width="1.7" height="1.4"/><rect x="386.1" y="83.8" width="1.7" height="1.4"/><rect x="389.5" y="83.8" width="1.7" height="1.4"/><path d="M383.4,72v1.1h-3.8V88h14.9V73.1h-3.8V72h-1.3v1.1h-4.7V72H383.4z M393.2,86.7h-12.3v-8.8h12.3L393.2,86.7L393.2,86.7z M389.3,74.3v0.8h1.3v-0.8h2.5v2.3h-12.3v-2.3h2.5v0.8h1.3v-0.8H389.3z"/></g></g></svg></span><time datetime="2018-10-27T01:08:30+09:00">October 27, 2018</time></span>
+        </p>
+      
+
+      
+
+      
+    </div>
+  </div>
+</header>
+
+
+<main id="main" class="page-content" aria-label="Content">
+  <div class="inner">
+    <article class="entry-wrap">
+      <div class="entry-content">
+        <h2 id="0-참조">0. 참조</h2>
+
+<p>메쉬 제작은 아래 링크를 참조했다.</p>
+
+<blockquote>
+  <p><a href="https://gist.github.com/a-type/b26e8fc02e64da9e9709">Unity 3D 3D bezier Curve Mesh Generator</a></p>
+</blockquote>
+
+<p>곡선을 만들기 위해서는 여러가지 공식이 있는데 그 중에서도 가장 간단한 베지어 곡선을 사용했다.</p>
+
+<blockquote>
+  <p><a href="https://catsirup.github.io/unity/2018/10/26/Bezier-Curve.html">베지어 곡선 그리기(Bezier Curves)</a></p>
+</blockquote>
+
+<h2 id="1-코드">1. 코드</h2>
+
+<div class="language-c# highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="n">MeshFilter</span> <span class="n">meshFilter</span> <span class="p">=</span> <span class="n">CreateMesh</span><span class="p">;</span>
+
+    <span class="k">public</span> <span class="n">Mesh</span> <span class="nf">CreateMesh</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="n">Mesh</span> <span class="n">mesh</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">Mesh</span><span class="p">();</span>
+        <span class="n">mesh</span><span class="p">.</span><span class="nf">Clear</span><span class="p">();</span>
+        <span class="kt">float</span> <span class="n">scaling</span> <span class="p">=</span> <span class="m">0.05f</span><span class="p">;</span>
+        <span class="kt">float</span> <span class="n">width</span> <span class="p">=</span> <span class="n">DRMath</span><span class="p">.</span><span class="nf">DenierToDiameter</span><span class="p">(</span><span class="n">yarn</span><span class="p">.</span><span class="n">thinkness</span><span class="p">,</span> <span class="n">yarn</span><span class="p">.</span><span class="n">filaments</span><span class="p">);</span>
+        <span class="n">List</span><span class="p">&lt;</span><span class="n">Vector3</span><span class="p">&gt;</span> <span class="n">vertList</span> <span class="p">=</span> <span class="k">new</span> <span class="n">List</span><span class="p">&lt;</span><span class="n">Vector3</span><span class="p">&gt;();</span>
+        <span class="n">List</span><span class="p">&lt;</span><span class="kt">int</span><span class="p">&gt;</span> <span class="n">triList</span> <span class="p">=</span> <span class="k">new</span> <span class="n">List</span><span class="p">&lt;</span><span class="kt">int</span><span class="p">&gt;();</span>
+        <span class="n">List</span><span class="p">&lt;</span><span class="n">Vector2</span><span class="p">&gt;</span> <span class="n">uvList</span> <span class="p">=</span> <span class="k">new</span> <span class="n">List</span><span class="p">&lt;</span><span class="n">Vector2</span><span class="p">&gt;();</span>
+        <span class="n">Vector3</span> <span class="n">upNormal</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">Vector3</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="p">-</span><span class="m">1</span><span class="p">);</span>
+        <span class="n">triList</span><span class="p">.</span><span class="nf">AddRange</span><span class="p">(</span><span class="k">new</span> <span class="kt">int</span><span class="p">[]</span> <span class="p">{</span>
+                <span class="m">2</span><span class="p">,</span> <span class="m">1</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span>    <span class="c1">//start face</span>
+			    <span class="m">0</span><span class="p">,</span> <span class="m">3</span><span class="p">,</span> <span class="m">2</span>
+            <span class="p">});</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">s</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">s</span> <span class="p">&lt;</span> <span class="n">numPoints</span><span class="p">;</span> <span class="n">s</span><span class="p">++)</span>
+        <span class="p">{</span>
+            <span class="kt">float</span> <span class="n">t</span> <span class="p">=</span> <span class="p">((</span><span class="kt">float</span><span class="p">)</span><span class="n">s</span><span class="p">)</span> <span class="p">/</span> <span class="n">numPoints</span><span class="p">;</span>
+            <span class="kt">float</span> <span class="n">futureT</span> <span class="p">=</span> <span class="p">((</span><span class="kt">float</span><span class="p">)</span><span class="n">s</span> <span class="p">+</span> <span class="m">1</span><span class="p">)</span> <span class="p">/</span> <span class="n">numPoints</span><span class="p">;</span>
+            <span class="n">Vector3</span> <span class="n">segmentStart</span> <span class="p">=</span> <span class="n">DRMath</span><span class="p">.</span><span class="nf">CalculateCubicBezierPoint</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">lerpPosition</span><span class="p">[</span><span class="m">0</span><span class="p">],</span> <span class="n">lerpPosition</span><span class="p">[</span><span class="m">1</span><span class="p">],</span> <span class="n">lerpPosition</span><span class="p">[</span><span class="m">2</span><span class="p">],</span> <span class="n">lerpPosition</span><span class="p">[</span><span class="m">3</span><span class="p">]);</span>
+            <span class="n">Vector3</span> <span class="n">segmentEnd</span> <span class="p">=</span> <span class="n">DRMath</span><span class="p">.</span><span class="nf">CalculateCubicBezierPoint</span><span class="p">(</span><span class="n">futureT</span><span class="p">,</span> <span class="n">lerpPosition</span><span class="p">[</span><span class="m">0</span><span class="p">],</span> <span class="n">lerpPosition</span><span class="p">[</span><span class="m">1</span><span class="p">],</span> <span class="n">lerpPosition</span><span class="p">[</span><span class="m">2</span><span class="p">],</span> <span class="n">lerpPosition</span><span class="p">[</span><span class="m">3</span><span class="p">]);</span>
+            <span class="n">Vector3</span> <span class="n">segmentDirection</span> <span class="p">=</span> <span class="n">segmentEnd</span> <span class="p">-</span> <span class="n">segmentStart</span><span class="p">;</span>
+            <span class="c1">//Debug.Log(segmentDirection);</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">s</span> <span class="p">==</span> <span class="m">0</span> <span class="p">||</span> <span class="n">s</span> <span class="p">==</span> <span class="n">numPoints</span> <span class="p">-</span> <span class="m">1</span><span class="p">)</span>
+                <span class="n">segmentDirection</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">Vector3</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">1</span><span class="p">,</span> <span class="m">0</span><span class="p">);</span>
+            <span class="n">segmentDirection</span><span class="p">.</span><span class="nf">Normalize</span><span class="p">();</span>
+            <span class="n">Vector3</span> <span class="n">segmentRight</span> <span class="p">=</span> <span class="n">Vector3</span><span class="p">.</span><span class="nf">Cross</span><span class="p">(</span><span class="n">upNormal</span><span class="p">,</span> <span class="n">segmentDirection</span><span class="p">);</span>
+            <span class="n">segmentRight</span> <span class="p">*=</span> <span class="n">width</span><span class="p">;</span>
+            <span class="n">Vector3</span> <span class="n">offset</span> <span class="p">=</span> <span class="n">segmentRight</span><span class="p">.</span><span class="n">normalized</span> <span class="p">*</span> <span class="p">(</span><span class="n">width</span> <span class="p">/</span> <span class="m">2</span><span class="p">)</span> <span class="p">*</span> <span class="n">scaling</span><span class="p">;</span>
+            <span class="n">Vector3</span> <span class="n">br</span> <span class="p">=</span> <span class="n">segmentRight</span> <span class="p">+</span> <span class="n">upNormal</span> <span class="p">*</span> <span class="n">width</span> <span class="p">+</span> <span class="n">offset</span><span class="p">;</span>
+            <span class="n">Vector3</span> <span class="n">tr</span> <span class="p">=</span> <span class="n">segmentRight</span> <span class="p">+</span> <span class="n">upNormal</span> <span class="p">*</span> <span class="p">-</span><span class="n">width</span> <span class="p">+</span> <span class="n">offset</span><span class="p">;</span>
+            <span class="n">Vector3</span> <span class="n">bl</span> <span class="p">=</span> <span class="p">-</span><span class="n">segmentRight</span> <span class="p">+</span> <span class="n">upNormal</span> <span class="p">*</span> <span class="n">width</span> <span class="p">+</span> <span class="n">offset</span><span class="p">;</span>
+            <span class="n">Vector3</span> <span class="n">tl</span> <span class="p">=</span> <span class="p">-</span><span class="n">segmentRight</span> <span class="p">+</span> <span class="n">upNormal</span> <span class="p">*</span> <span class="p">-</span><span class="n">width</span> <span class="p">+</span> <span class="n">offset</span><span class="p">;</span>
+            <span class="kt">int</span> <span class="n">curTriIdx</span> <span class="p">=</span> <span class="n">vertList</span><span class="p">.</span><span class="n">Count</span><span class="p">;</span>
+            <span class="n">Vector3</span><span class="p">[]</span> <span class="n">segmentVerts</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Vector3</span><span class="p">[]</span>
+            <span class="p">{</span>
+                <span class="n">segmentStart</span> <span class="p">+</span> <span class="n">br</span><span class="p">,</span>
+                <span class="n">segmentStart</span> <span class="p">+</span> <span class="n">bl</span><span class="p">,</span>
+                <span class="n">segmentStart</span> <span class="p">+</span> <span class="n">tl</span><span class="p">,</span>
+                <span class="n">segmentStart</span> <span class="p">+</span> <span class="n">tr</span><span class="p">,</span>
+            <span class="p">};</span>
+            <span class="n">vertList</span><span class="p">.</span><span class="nf">AddRange</span><span class="p">(</span><span class="n">segmentVerts</span><span class="p">);</span>
+            <span class="n">Vector2</span><span class="p">[]</span> <span class="n">uvs</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Vector2</span><span class="p">[]</span>
+            <span class="p">{</span>
+                <span class="k">new</span> <span class="nf">Vector2</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">),</span>
+                <span class="k">new</span> <span class="nf">Vector2</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">1</span><span class="p">),</span>
+                <span class="k">new</span> <span class="nf">Vector2</span><span class="p">(</span><span class="m">1</span><span class="p">,</span> <span class="m">1</span><span class="p">),</span>
+                <span class="k">new</span> <span class="nf">Vector2</span><span class="p">(</span><span class="m">1</span><span class="p">,</span> <span class="m">1</span><span class="p">)</span>
+            <span class="p">};</span>
+            <span class="n">uvList</span><span class="p">.</span><span class="nf">AddRange</span><span class="p">(</span><span class="n">uvs</span><span class="p">);</span>
+            <span class="kt">int</span><span class="p">[]</span> <span class="n">segmentTriangles</span> <span class="p">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">[]</span>
+            <span class="p">{</span>
+                <span class="n">curTriIdx</span> <span class="p">+</span> <span class="m">6</span><span class="p">,</span> <span class="n">curTriIdx</span> <span class="p">+</span> <span class="m">5</span><span class="p">,</span> <span class="n">curTriIdx</span> <span class="p">+</span> <span class="m">1</span><span class="p">,</span> <span class="c1">//left face</span>
+				<span class="n">curTriIdx</span> <span class="p">+</span> <span class="m">1</span><span class="p">,</span> <span class="n">curTriIdx</span> <span class="p">+</span> <span class="m">2</span><span class="p">,</span> <span class="n">curTriIdx</span> <span class="p">+</span> <span class="m">6</span><span class="p">,</span>
+                <span class="n">curTriIdx</span> <span class="p">+</span> <span class="m">7</span><span class="p">,</span> <span class="n">curTriIdx</span> <span class="p">+</span> <span class="m">3</span><span class="p">,</span> <span class="n">curTriIdx</span> <span class="p">+</span> <span class="m">0</span><span class="p">,</span> <span class="c1">//right face</span>
+				<span class="n">curTriIdx</span> <span class="p">+</span> <span class="m">0</span><span class="p">,</span> <span class="n">curTriIdx</span> <span class="p">+</span> <span class="m">4</span><span class="p">,</span> <span class="n">curTriIdx</span> <span class="p">+</span> <span class="m">7</span><span class="p">,</span>
+                <span class="n">curTriIdx</span> <span class="p">+</span> <span class="m">1</span><span class="p">,</span> <span class="n">curTriIdx</span> <span class="p">+</span> <span class="m">5</span><span class="p">,</span> <span class="n">curTriIdx</span> <span class="p">+</span> <span class="m">4</span><span class="p">,</span> <span class="c1">//top face</span>
+				<span class="n">curTriIdx</span> <span class="p">+</span> <span class="m">4</span><span class="p">,</span> <span class="n">curTriIdx</span> <span class="p">+</span> <span class="m">0</span><span class="p">,</span> <span class="n">curTriIdx</span> <span class="p">+</span> <span class="m">1</span><span class="p">,</span>
+                <span class="n">curTriIdx</span> <span class="p">+</span> <span class="m">3</span><span class="p">,</span> <span class="n">curTriIdx</span> <span class="p">+</span> <span class="m">7</span><span class="p">,</span> <span class="n">curTriIdx</span> <span class="p">+</span> <span class="m">6</span><span class="p">,</span> <span class="c1">//bottom face</span>
+				<span class="n">curTriIdx</span> <span class="p">+</span> <span class="m">6</span><span class="p">,</span> <span class="n">curTriIdx</span> <span class="p">+</span> <span class="m">2</span><span class="p">,</span> <span class="n">curTriIdx</span> <span class="p">+</span> <span class="m">3</span>
+            <span class="p">};</span>
+            <span class="n">triList</span><span class="p">.</span><span class="nf">AddRange</span><span class="p">(</span><span class="n">segmentTriangles</span><span class="p">);</span>
+            <span class="c1">// final segment fenceposting: finish segment and add end face</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">s</span> <span class="p">==</span> <span class="n">numPoints</span> <span class="p">-</span> <span class="m">1</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="n">curTriIdx</span> <span class="p">=</span> <span class="n">vertList</span><span class="p">.</span><span class="n">Count</span><span class="p">;</span>
+                <span class="n">vertList</span><span class="p">.</span><span class="nf">AddRange</span><span class="p">(</span><span class="k">new</span> <span class="n">Vector3</span><span class="p">[]</span> <span class="p">{</span>
+                    <span class="n">segmentEnd</span> <span class="p">+</span> <span class="n">br</span><span class="p">,</span>
+                    <span class="n">segmentEnd</span> <span class="p">+</span> <span class="n">bl</span><span class="p">,</span>
+                    <span class="n">segmentEnd</span> <span class="p">+</span> <span class="n">tl</span><span class="p">,</span>
+                    <span class="n">segmentEnd</span> <span class="p">+</span> <span class="n">tr</span>
+                <span class="p">});</span>
+                <span class="n">uvList</span><span class="p">.</span><span class="nf">AddRange</span><span class="p">(</span><span class="k">new</span> <span class="n">Vector2</span><span class="p">[]</span> <span class="p">{</span>
+                        <span class="k">new</span> <span class="nf">Vector2</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">),</span>
+                        <span class="k">new</span> <span class="nf">Vector2</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">1</span><span class="p">),</span>
+                        <span class="k">new</span> <span class="nf">Vector2</span><span class="p">(</span><span class="m">1</span><span class="p">,</span> <span class="m">1</span><span class="p">),</span>
+                        <span class="k">new</span> <span class="nf">Vector2</span><span class="p">(</span><span class="m">1</span><span class="p">,</span> <span class="m">1</span><span class="p">)</span>
+                    <span class="p">}</span>
+                <span class="p">);</span>
+                <span class="n">triList</span><span class="p">.</span><span class="nf">AddRange</span><span class="p">(</span><span class="k">new</span> <span class="kt">int</span><span class="p">[]</span> <span class="p">{</span>
+                    <span class="n">curTriIdx</span> <span class="p">+</span> <span class="m">0</span><span class="p">,</span> <span class="n">curTriIdx</span> <span class="p">+</span> <span class="m">1</span><span class="p">,</span> <span class="n">curTriIdx</span> <span class="p">+</span> <span class="m">2</span><span class="p">,</span> <span class="c1">//end face</span>
+					<span class="n">curTriIdx</span> <span class="p">+</span> <span class="m">2</span><span class="p">,</span> <span class="n">curTriIdx</span> <span class="p">+</span> <span class="m">3</span><span class="p">,</span> <span class="n">curTriIdx</span> <span class="p">+</span> <span class="m">0</span>
+                <span class="p">});</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="n">mesh</span><span class="p">.</span><span class="n">vertices</span> <span class="p">=</span> <span class="n">vertList</span><span class="p">.</span><span class="nf">ToArray</span><span class="p">();</span>
+        <span class="n">mesh</span><span class="p">.</span><span class="n">triangles</span> <span class="p">=</span> <span class="n">triList</span><span class="p">.</span><span class="nf">ToArray</span><span class="p">();</span>
+        <span class="n">mesh</span><span class="p">.</span><span class="n">uv</span> <span class="p">=</span> <span class="n">uvList</span><span class="p">.</span><span class="nf">ToArray</span><span class="p">();</span>
+        <span class="n">mesh</span><span class="p">.</span><span class="nf">RecalculateNormals</span><span class="p">();</span>
+        <span class="n">mesh</span><span class="p">.</span><span class="nf">RecalculateBounds</span><span class="p">();</span>
+        <span class="k">return</span> <span class="n">mesh</span><span class="p">;</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+
+<p>※ DRMath.CalculateCubicBezierPoint는 베지어 그리기 포스팅에 있으니 참조하면 된다.</p>
+
+<p>이 리턴 값을 MeshFilter에다가 넣어주면 만들어진 메쉬가 보여질 것이다.</p>
+
+<h2 id="2-스크린샷">2. 스크린샷</h2>
+
+<p>해당 코드를 이용해 만든 결과물이다.</p>
+
+<p><img src="http://localhost:4000/assets/images/SplineMesh/3D_NoneOptimize.Png" alt="image-center" class="align-center" /></p>
+
+<p><img src="http://localhost:4000/assets/images/SplineMesh/3D_Optimize.Png" alt="image-center" class="align-center" /></p>
+
+      </div>
+      
+    </article>
+  </div>
+</main>
+
+        </div>
+
+        <div class="search-content">
+          <div class="inner">
+  
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer" class="site-footer">
+  <div class="inner">
+    <div class="copyright">
+      
+        <p>&copy; 2019 H00die's Blog.</p>
+      
+    </div>
+  </div>
+</footer>
+
+    
+
+<script async src="/assets/javascripts/main.js"></script>
+
+
+
+
+  </body>
+
+</html>

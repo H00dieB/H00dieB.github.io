@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<!--
+    Basically Basic Jekyll Theme 1.4.1
+    Copyright 2017-2018 Michael Rose - mademistakes.com | @mmistakes
+    Free for personal and commercial use under the MIT license
+    https://github.com/mmistakes/jekyll-basically-theme/blob/master/LICENSE
+-->
+<html lang="en-US" class="no-js">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+    <title>[칼럼] AI 음성비서, 어디까지 왔을까?</title>
+    <meta name="description" content="음성을 이용하여 컴퓨터와 상호작용을 시도하다. 음성은 인간이 가진 가장 본질적인 커뮤니케이션이다.그래서 음성을 이용해 컴퓨터와 상호작용을 하는 것을 가장 이상적인 인터페이스로 여겼다. 1954년 IBM과 조지타운 대학이 공동으로 참여한 기계번역(Machine-translation)...">
+    <link rel="canonical" href="http://localhost:4000/ai/2018/11/09/AI-Assistant.html">
+  
+
+  <script>
+    /* Cut the mustard */
+    if ( 'querySelector' in document && 'addEventListener' in window ) {
+      document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + 'js';
+    }
+  </script>
+
+  <link rel="stylesheet" href="/assets/stylesheets/main.css">
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,600,600i">
+  
+
+  
+    
+    <link rel="alternate" type="application/atom+xml" title="H00die&#39;s Blog" href="/feed.xml">
+  
+</head>
+
+
+  <body class="layout--post 칼럼-ai-음성비서-어디까지-왔을까">
+
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#primary-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+
+    <div class="sidebar-toggle-wrapper">
+      
+
+      <button class="toggle navicon-button larr" type="button">
+        <span class="toggle-inner">
+          <span class="sidebar-toggle-label visually-hidden">Menu</span>
+          <span class="navicon"></span>
+        </span>
+      </button>
+    </div>
+
+    <div id="sidebar" class="sidebar">
+      <div class="inner">
+        <nav id="primary-nav" class="site-nav" itemscope itemtype="http://schema.org/SiteNavigationElement" aria-label="Main navigation">
+  <ul id="menu-main-navigation" class="menu">
+    <!-- Home link -->
+    <li class="menu-item">
+      <a href="/" itemprop="url">
+        <span itemprop="name">Home</span>
+      </a>
+    </li>
+
+    <!-- site.pages links -->
+    
+    
+
+    
+      
+      
+    
+  </ul>
+</nav>
+
+        <ul class="contact-list">
+  
+    <li>
+      <a href="mailto:your-email@example.com">
+        <span class="icon icon--email"><svg xmlns="http://www.w3.org/2000/svg" viewBox="313.1 3.7 16 16"><path d="M318.5 8.9c0-.2.2-.4.4-.4h4.5c.2 0 .4.2.4.4s-.2.4-.4.4h-4.5c-.3 0-.4-.2-.4-.4zm.4 2.1h4.5c.2 0 .4-.2.4-.4s-.2-.4-.4-.4h-4.5c-.2 0-.4.2-.4.4s.1.4.4.4zm3.5 1.2c0-.2-.2-.4-.4-.4h-3.1c-.2 0-.4.2-.4.4s.2.4.4.4h3.1c.2.1.4-.1.4-.4zm-1.5-8.4l-1.7 1.4c-.2.1-.2.4 0 .6s.4.2.6 0l1.4-1.2 1.4 1.2c.2.1.4.1.6 0s.1-.4 0-.6l-1.7-1.4c-.3-.1-.5-.1-.6 0zm7.8 6.2c.1.1.1.2.1.3v7.9c0 .8-.7 1.5-1.5 1.5h-12.5c-.8 0-1.5-.7-1.5-1.5v-7.9c0-.1.1-.2.1-.3l1.6-1.3c.2-.1.4-.1.6 0s.1.4 0 .6l-1.2 1 1.8 1.3v-4c0-.6.5-1.1 1.1-1.1h7.5c.6 0 1.1.5 1.1 1.1v4l1.8-1.3-1.2-1c-.2-.1-.2-.4 0-.6s.4-.2.6 0l1.6 1.3zm-11.6 2.2l4 2.8 4-2.8V7.6c0-.1-.1-.2-.2-.2h-7.5c-.1 0-.2.1-.2.2v4.6zm10.9-1l-4.7 3.4 3.4 2.6c.2.1.2.4.1.6-.1.2-.4.2-.6.1l-3.6-2.8-1.2.8c-.1.1-.3.1-.5 0l-1.2-.8-3.6 2.8c-.2.1-.4.1-.6-.1-.1-.2-.1-.4.1-.6l3.4-2.6-4.7-3.4v7.1c0 .4.3.6.6.6h12.5c.4 0 .6-.3.6-.6v-7.1z"/></svg></span>
+        <span class="label">Email</span>
+      </a>
+    </li>
+  
+
+  
+    <li><a href="https://github.com/jekyll">
+  <span class="icon icon--github"><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M8 0C3.58 0 0 3.582 0 8c0 3.535 2.292 6.533 5.47 7.59.4.075.547-.172.547-.385 0-.19-.007-.693-.01-1.36-2.226.483-2.695-1.073-2.695-1.073-.364-.924-.89-1.17-.89-1.17-.725-.496.056-.486.056-.486.803.056 1.225.824 1.225.824.714 1.223 1.873.87 2.33.665.072-.517.278-.87.507-1.07-1.777-.2-3.644-.888-3.644-3.953 0-.873.31-1.587.823-2.147-.09-.202-.36-1.015.07-2.117 0 0 .67-.215 2.2.82.64-.178 1.32-.266 2-.27.68.004 1.36.092 2 .27 1.52-1.035 2.19-.82 2.19-.82.43 1.102.16 1.915.08 2.117.51.56.82 1.274.82 2.147 0 3.073-1.87 3.75-3.65 3.947.28.24.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.14.46.55.38C13.71 14.53 16 11.53 16 8c0-4.418-3.582-8-8-8"/></svg></span>
+  <span class="label">GitHub</span>
+</a>
+</li>
+  
+
+  
+
+  <li>
+    
+      <a href="/feed.xml" title="Atom Feed">
+        <span class="icon icon--rss"><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M12.8 16C12.8 8.978 7.022 3.2 0 3.2V0c8.777 0 16 7.223 16 16h-3.2zM2.194 11.61c1.21 0 2.195.985 2.195 2.196 0 1.21-.99 2.194-2.2 2.194C.98 16 0 15.017 0 13.806c0-1.21.983-2.195 2.194-2.195zM10.606 16h-3.11c0-4.113-3.383-7.497-7.496-7.497v-3.11c5.818 0 10.606 4.79 10.606 10.607z"/></svg></span>
+        <span class="label">Subscribe</span>
+      </a>
+    
+  </li>
+</ul>
+
+      </div>
+    </div>
+
+    <div class="canvas">
+      <div class="wrapper">
+        
+
+<header id="masthead">
+  <div class="inner">
+    <div class="title-area">
+      
+        <p class="site-title">
+          <a href="/">
+            
+            <span>H00die&#39;s Blog</span>
+          </a>
+        </p>
+      
+    </div>
+  </div>
+</header>
+
+        <div class="initial-content">
+          <header class="intro">
+  
+
+  <div class="inner">
+    <div class="intro-text">
+      <h1 id="page-title" class="intro-title">[칼럼] AI 음성비서, 어디까지 왔을까?
+</h1>
+      
+
+      
+        
+
+        <p class="entry-meta">
+          <span class="byline-item">by devsaka</span><span class="byline-item"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="379 72 16 16"><g><g><path fill="none" d="M380.8,86.7h12.3v-8.8h-12.3V86.7z M389.5,78.8h1.7v1.4h-1.7V78.8z M389.5,81.3h1.7v1.4h-1.7V81.3z M389.5,83.8h1.7v1.4h-1.7V83.8z M386.1,78.8h1.7v1.4h-1.7V78.8z M386.1,81.3h1.7v1.4h-1.7V81.3z M386.1,83.8h1.7v1.4h-1.7V83.8z M382.8,78.8h1.7v1.4h-1.7V78.8z M382.8,81.3h1.7v1.4h-1.7V81.3z M382.8,83.8h1.7v1.4h-1.7V83.8z"/><polygon fill="none" points="384.7 75.1 383.4 75.1 383.4 74.3 380.8 74.3 380.8 76.6 393.2 76.6 393.2 74.3 390.6 74.3 390.6 75.1 389.3 75.1 389.3 74.3 384.7 74.3"/><rect x="382.8" y="78.8" width="1.7" height="1.4"/><rect x="386.1" y="78.8" width="1.7" height="1.4"/><rect x="389.5" y="78.8" width="1.7" height="1.4"/><rect x="382.8" y="81.3" width="1.7" height="1.4"/><rect x="386.1" y="81.3" width="1.7" height="1.4"/><rect x="389.5" y="81.3" width="1.7" height="1.4"/><rect x="382.8" y="83.8" width="1.7" height="1.4"/><rect x="386.1" y="83.8" width="1.7" height="1.4"/><rect x="389.5" y="83.8" width="1.7" height="1.4"/><path d="M383.4,72v1.1h-3.8V88h14.9V73.1h-3.8V72h-1.3v1.1h-4.7V72H383.4z M393.2,86.7h-12.3v-8.8h12.3L393.2,86.7L393.2,86.7z M389.3,74.3v0.8h1.3v-0.8h2.5v2.3h-12.3v-2.3h2.5v0.8h1.3v-0.8H389.3z"/></g></g></svg></span><time datetime="2018-11-09T00:01:30+09:00">November 9, 2018</time></span>
+        </p>
+      
+
+      
+
+      
+    </div>
+  </div>
+</header>
+
+
+<main id="main" class="page-content" aria-label="Content">
+  <div class="inner">
+    <article class="entry-wrap">
+      <div class="entry-content">
+        <h2 id="음성을-이용하여-컴퓨터와-상호작용을-시도하다">음성을 이용하여 컴퓨터와 상호작용을 시도하다.</h2>
+<p><strong>음성</strong>은 인간이 가진 가장 본질적인 커뮤니케이션이다.그래서 음성을 이용해 컴퓨터와 상호작용을 하는 것을 가장 이상적인 인터페이스로 여겼다. 1954년 IBM과 조지타운 대학이 공동으로 참여한 기계번역(Machine-translation) 기술 개발 프로젝트부터 시작해 많은 연구가 진행되었다.</p>
+
+<p>하지만 방대한 음성데이터를 처리하기 위한 컴퓨터의 연산 능력 부족과 낮은 인식률로 인해 영화 “아이언 맨”에 나오는 음성 인식 비서 자비스와 같은 기술은 아직 멀리 있는 듯 했다. 2011년 애플에서 시리가 등장하기 전까지는 말이다.</p>
+
+<h2 id="최초의-상용화-ai-음성-비서-시리siri">최초의 상용화 AI 음성 비서, 시리(Siri)</h2>
+<p>2011년 10월 4일, 아이폰 4s 발표와 함께 시리(Siri)가 발표되었다. 그 당시만 해도 단순한 음성 인식 기능을 애플처럼 포장했다라고 저평가 받았지만, <strong>AI가 뒷받침하는 음성 인식 개인비서라는 것이 밝혀지면서 주목을 받기 시작</strong>했다. 그 이후에 2013년 안드로이드 4.4 Kitkat OS부터 Google Now 애플리케이션을 통해 음성검색 기능인 “OK Google” 서비스를 지원하기 시작하면서 본격적으로 일반인에게 음성 인식 기술이 빠르게 보급되기 시작했다. 하지만 이때까지는 “오늘의 날씨”와 같은 간단한 음성 인식 기능만 사용할 수 있었다.</p>
+
+<h2 id="스마트폰을-넘어서-집-안에-ai-비서가-생기다">스마트폰을 넘어서 집 안에 AI 비서가 생기다.</h2>
+<p>시리 이후 뚜렷한 진전이 없던 음성 비서 분야에서 “Always ready, connected, and fast. Just Ask” 라는 문구와 함께 2014년 11월 아마존에서 스마트 스피커 “에코”가 등장했다.</p>
+
+<iframe width="639" height="310" src="https://www.youtube.com/embed/FQn6aFQwBQU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<p>“알렉사” 라는 별명을 가진 음성 인식 비서가 내장된 스마트 스피커였다. 시리처럼 날씨, 시간 뿐만 아니라 그 날의 주요 뉴스 브리핑, 스포츠 게임 결과, 심지어 홈 오토메이션(블루투스나 와이파이로 조절할 수 있는 물건들)이 되는 게 가능하도록 디자인 된 전등, 전원 스위치는 알렉사가 해결해줄 수 있었다. 잠자리에 누웠다가 전원을 끄기 위해 다시 일어나야 하는 불편함 대신, “불 꺼(turn the light off)” 한 마디로 해결할 수 있었다.</p>
+
+<p>또한 아마존은 자사 제품 중 “대시”처럼 에코로 쇼핑을 가능하게 했다. 디지털 음원 뿐만 아니라 다양한 실물 제품을 장바구니에 넣고 현재 주문 상태를 확인하고 주문할 수 있게 했다. 물론 제한 사항은 존재했지만 음성 인식 기능이 엄청나게 발전했다라고 느꼈다. 에코가 대 성공을 거둔 이후 글로벌 IT 시장을 주도하고 있는 메이저 기업들은 자체 AI 음성 비서 개발은 물론 이의 플랫폼화를 위해 보급 확대로 시장 선점을 도모하기 시작했다. SKT 누구, KT 기가지니 등 한국에서도 음성 인식 비서가 출시됐고 현재도 계속해서 발전하고 있는 중이다.</p>
+
+<h2 id="ai-음성-비서가-직접-전화를-걸어-미용실을-예약했다">AI 음성 비서가 직접 전화를 걸어 미용실을 예약했다.</h2>
+<p>2018년 5월 8일, 구글 I/O 개발자 컨퍼런스에서 <strong>듀플렉스(Duplex)</strong> 가 공개됐을 때, 경악을 금치 못했다. 여태껏 봐왔던 AI 비서와는 차원이 달랐다.</p>
+<iframe width="639" height="310" src="https://www.youtube.com/embed/m6sWsd_tkAs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<p><br /></p>
+
+<blockquote>
+  <p>진짜 사람과 똑같이 전화 통화가 가능해진 구글의 인공지능 데모 시연 (한, 영 동시자막), Project스노우볼</p>
+</blockquote>
+
+<p>Google Now에서 업그레이드 된 Google Assistant로 미용실 약속을 사용자가 잡아놓으면, Google Assistant가 미용실에 직접 전화를 걸어 미용사와 통화를 해 예약을 잡아주는 방식이었다. 더욱 놀라웠던 것은 대화 중 긍정을 뜻하는 ‘으흠’ 이나 잠시 머뭇거리는 ‘음…’ 등을 사용해 실제 사람처럼 말을 했다.<br />
+<img src="https://1.bp.blogspot.com/-WdgRuOg6lwc/WvEZTDLYg_I/AAAAAAAACsM/QNLSl4Yid9wKij_2KNpCRiXjiyeptu9vgCLcBGAs/s640/rnn_big.png (preview)" alt="Change World preview" /></p>
+
+<p>이러한 듀플렉스의 핵심은 구글의 기계학습 AI 기술 <strong>TFX(TesorFlow Extended)</strong> 라고 한다. 익명 처리된 수십만 건의 온라인 예약 음성 녹음을 통해 반복 학습한 결과로 만들어졌다고 한다. 아직 테스트 버전으로 출시가 되었지만 조만간 제한된 영역에서 사용을 할 수 있을 것이라고 했다.</p>
+
+<h2 id="앞으로는-어떻게-ai-음성-비서가-발달하게-될까">앞으로는 어떻게 AI 음성 비서가 발달하게 될까?</h2>
+<p>AI 비서는 우리 생활에서 스마트폰으로 날씨를 알려주던 기능부터 홈 오토메이션이 되는 스마트 스피커, 그리고 이젠 미용실이나 레스토랑까지 전화해서 예약을 해주는 수준까지 발달했다. 이제 AI 음성 비서는 스마트폰, 스피커를 넘어 가정용 기기나 자동차 등 다양한 디바이스 분야로 영역을 확대한다고 한다. 앞서 이야기했듯 “음성”을 이용하는 것은 인간과 컴퓨터의 상호작용에 가장 이상적인 인터페이스기 때문이다. 스마트폰의 등장으로 휴대전화의 패러다임이 바뀌었듯이 AI를 기반으로 한 음성 비서의 확산은 향후 대부분의 HW 기기 산업 발전 방향에 커다란 영향을 줄 것이다. 이제 우리는 냉장고와도 음성으로 대화를 해 필요한 재료를 주문할 수도 있을 것이고, 자동차에 음성으로 길을 묻는 세상이 도래할 것이다.</p>
+
+<h2 id="참고">참고</h2>
+<ul>
+  <li>음성인식 AI 비서 시장의 현황과 시사점. 최지혜, 이선희</li>
+  <li>플랫폼으로 진화하는 인공지능(AI) 음성비서. 조성선, 김용균</li>
+  <li><a href="https://ai.googleblog.com/2018/05/duplex-ai-system-for-natural-conversation.html">https://ai.googleblog.com/2018/05/duplex-ai-system-for-natural-conversation.html</a></li>
+</ul>
+
+      </div>
+      
+    </article>
+  </div>
+</main>
+
+        </div>
+
+        <div class="search-content">
+          <div class="inner">
+  
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer" class="site-footer">
+  <div class="inner">
+    <div class="copyright">
+      
+        <p>&copy; 2019 H00die's Blog.</p>
+      
+    </div>
+  </div>
+</footer>
+
+    
+
+<script async src="/assets/javascripts/main.js"></script>
+
+
+
+
+  </body>
+
+</html>

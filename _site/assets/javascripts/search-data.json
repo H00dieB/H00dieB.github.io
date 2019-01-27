@@ -1,0 +1,81 @@
+var store = [{
+        "title": "[Blockchain] 비트코인의 탄생",
+        "excerpt":"1. 비트코인이란 무엇인가 순수한 P2P 온라인 결제를 실현한다. - 사카시 나카모토비트코인이란 2009년 사토시 나카모토가 만든 가상화폐다. 통화를 발생하고 관리하는 중앙 장치가 존재하지 않는 구조를 가지고 있는데, 여기서 이 중앙 기관이 없다면 누군가의 잔고가 기록된 장부는 누가 관리할 것인가에 대한 의문이 생긴다. 만약 이 장부를 관리하는 사람이 없다면, 이중지불을 하는 경우가...","categories": ["blockchain"],
+        "tags": ["bitcoin","blockchain","비트코인","블록체인"],
+        "url": "http://localhost:4000/blockchain/2018/10/25/What-is-bitcoin.html"
+      },{
+        "title": "[Unity, LinQ] 입력한 텍스트가 이메일 형식인지 체크하는 방법",
+        "excerpt":"개발하던 앱에 로그인과 회원가입 기능을 넣어야했다. 유저가 실제로 사용하는 이메일이어야하며, 이메일 형식이어야 나중에 마케팅에 쓸 수 있다고 부탁을 했다. 인증 형식을 어떻게 해야할 지가 참 고민이었는데 구글에서 해답을 찾았다. ※ input_email.text -&gt; Unity uGui에 있는 InputFiled컴포넌트를 받아온 것이다. 이것 말고 다른 원하는 자료형을 받아서 작업할 수 있다. using System.Globalization;using System.Text.RegularExpressions;...","categories": ["Unity"],
+        "tags": ["Unity","Develop","Linq"],
+        "url": "http://localhost:4000/unity/2018/10/26/Check-Email-Account-Form.html"
+      },{
+        "title": "[C#, MySQL] C#에서 MySQL 사용하기",
+        "excerpt":"C# Native에서 MySQL을 사용하는 것은 Postgresql보다 세팅도 간단하고 훨씬 편했다. 1. 개발환경 세팅하기. 나는 Visual Studio 2017 Community에서 C#으로 프로젝트를 진행하기 때문에 MySQL Download Connector 에서 ‘Select Operating System’을 ‘.Net &amp; Mono’ 용으로 받았다(Mono도 같이 있으니까 Unity에서도 쓰라고 합쳐놓은 듯 하다.) 다운로드 버튼을 누르면 밑에 ‘No thanks, just start my...","categories": ["Develop"],
+        "tags": ["C#","Unity","Develop","MySQL","Database"],
+        "url": "http://localhost:4000/develop/2018/10/26/CSharp-MySQL.html"
+      },{
+        "title": "[Unity] 3D Spline Mesh 만들기 1 - 기초",
+        "excerpt":"회사에서 원단을 표현하기 위해 곡선 메쉬를 만들 일이 있어 검색하면서 공부한 내용이다. 0. 시작하기 앞서 DirectX를 공부한 사람은 알고 있겠지만, 기본적으로 메쉬가 만들어지는 원리를 모르면 아래 링크도 보는 것이 좋다. Unite 2015 - A coder’s guide to spline-based procedural geometry 간단하게 몇 가지 용어를 설명해보겠다. 1. Triangles 메쉬의 기초인 삼각형...","categories": ["Unity"],
+        "tags": ["Unity","Develop","Spline Mesh","곡선 메쉬"],
+        "url": "http://localhost:4000/unity/2018/10/27/Draw-3D-Spline-Mesh-1.html"
+      },{
+        "title": "[Unity] 3D Spline Mesh 만들기 2 - 코드",
+        "excerpt":"0. 참조 메쉬 제작은 아래 링크를 참조했다. Unity 3D 3D bezier Curve Mesh Generator 곡선을 만들기 위해서는 여러가지 공식이 있는데 그 중에서도 가장 간단한 베지어 곡선을 사용했다. 베지어 곡선 그리기(Bezier Curves) 1. 코드 MeshFilter meshFilter = CreateMesh; public Mesh CreateMesh() { Mesh mesh = new Mesh(); mesh.Clear(); float scaling =...","categories": ["Unity"],
+        "tags": ["Unity","Develop","Spline Mesh","곡선 메쉬"],
+        "url": "http://localhost:4000/unity/2018/10/27/Draw-3D-Spline-Mesh-2.html"
+      },{
+        "title": "[Unity] 베지어 곡선 그리기(Bezier Curves)",
+        "excerpt":"1. 원리 다음 두 사이트를 참조했다. 베지어 곡선, 위키백과 블로그 안에 있는 gif 파일을 보면 이해가 쉽다 2. 구현 기본적으로 아래의 영상을 참고했다. Bezier Curves in Unity 여기서 중요한 부분은 private Vector3 CalculateCubicBezierPoint(float t, Vector3 p0, Vector3 p1, Vector3 p2, Vector3 p3) { // return = (1 - t)3 P0...","categories": ["Unity"],
+        "tags": ["Unity","Develop","Math","Spline","Bezier Spline"],
+        "url": "http://localhost:4000/unity/2018/10/27/Bezier-Curve.html"
+      },{
+        "title": "[iOS] 스위프트에서 화면 전환하는 법",
+        "excerpt":"Swift를 겉핥기 식으로 공부한 뒤, iOS 프로젝트를 진행하는 중이었다.개발 중 메인으로 쓰여지는 홈 화면에서 A 뷰 컨트롤러로 갔다가 다시 메인으로 오니 Popup Alert창이 떠야하는 데 뜨질 않는 버그가 발생했다. 코드 상에서 잘못된 부분이 없길래 A 뷰 컨트롤러로 가는 코드만 지웠더니 알람창은 제대로 뜨니 뷰 컨트롤러 간의 이동이 잘못된 것을 감지하고...","categories": ["Swift"],
+        "tags": ["Swift","Develop","Segue","화면 전환"],
+        "url": "http://localhost:4000/swift/2018/10/30/Swift-Scene-Change.html"
+      },{
+        "title": "[iOS] Swift를 이용해 비콘을 연동해보자",
+        "excerpt":"1. 시작하면서 회사에서 Swift와 비콘을 연동해 iOS Native 앱을 만드는 프로젝트를 진행하고 있다. 생판 배워본 적도 없는 Swift를 공부하고 구글링을 하면서 하나하나 만들어가는 중인데, 그 중에서 아이폰과 비콘을 연동하는 방법에 대해서 정리를 하기 위해 작성한다. 코드와 사전 지식은 다음 링크를 참고했다.참조링크 : [ios] iBeacon - basic, 이동건의 이유있는 코드 2....","categories": ["Swift"],
+        "tags": ["Swift","Develop","iBeacon","iOS"],
+        "url": "http://localhost:4000/swift/2018/10/30/iOS-Swift-iBeacon.html"
+      },{
+        "title": "[Unity] Unable to convert classes into dex format",
+        "excerpt":"에러 내용 유니티(5.x버전)에서 안드로이드 빌드를 하다가 다음과 같은 에러가 발생했다.콘솔에서 확인해보니 다음과 같은 이유로 빌드에 실패했다고 뜬다. \"trouble writing output: Too many field references to fit in one dex file: 90410; max is 65536.You may try using multi-dex. If multi-dex is enabled then the list of classes for the main...","categories": ["Unity"],
+        "tags": ["Unity","Develop","Android","MultiDex"],
+        "url": "http://localhost:4000/unity/2018/10/30/Unity-MultiDex-Solution.html"
+      },{
+        "title": "[iOS] 비콘이 간헐적으로 통신이 끊길 때 해결법",
+        "excerpt":"앞서 개발하고 있던 비콘 프로젝트에서 간간히 비콘과의 연결이 끊어졌다가 다시 잡히는 현상이 발생했다.검색해보니 altBeacon이고 iBeacon이고 같은 증상이 나타나는 것 같다.회사 내부에서 회의하고 내린 결론은 다른 앱이 백그라운드에서 실행되거나, 다른 앱을 사용하고 있을 때 콜백이 늦게 돌아서 그 사이에 신호를 못잡으면 바로 비콘과의 연결이 끊어졌다고 체크하는 것이 문제였다.그래서 간단하게 비콘이 없다고...","categories": ["Swift"],
+        "tags": ["Swift","Develop","iBeacon","iOS"],
+        "url": "http://localhost:4000/swift/2018/11/02/iOS-Swift-iBeacon-Error.html"
+      },{
+        "title": "[칼럼] AI 음성비서, 어디까지 왔을까?",
+        "excerpt":"음성을 이용하여 컴퓨터와 상호작용을 시도하다. 음성은 인간이 가진 가장 본질적인 커뮤니케이션이다.그래서 음성을 이용해 컴퓨터와 상호작용을 하는 것을 가장 이상적인 인터페이스로 여겼다. 1954년 IBM과 조지타운 대학이 공동으로 참여한 기계번역(Machine-translation) 기술 개발 프로젝트부터 시작해 많은 연구가 진행되었다. 하지만 방대한 음성데이터를 처리하기 위한 컴퓨터의 연산 능력 부족과 낮은 인식률로 인해 영화 “아이언 맨”에...","categories": ["AI"],
+        "tags": ["AI","음성인식","컬럼"],
+        "url": "http://localhost:4000/ai/2018/11/09/AI-Assistant.html"
+      },{
+        "title": "[유튜브 영상] AI 음성비서의 과거와 미래",
+        "excerpt":"본 영상은 AI 음성비서, 어디까지 왔을까?를 바탕으로 제작한 영상입니다.  ","categories": ["AI"],
+        "tags": ["AI","음성인식","컬럼"],
+        "url": "http://localhost:4000/ai/2018/12/04/AI-Assistant-Video.html"
+      },{
+        "title": "[2018년 회고록] 쓸까말까 고민하다가 마지막 날에 급하게 작성하는 회고록",
+        "excerpt":"공사다망한 올해 2018년은 유난히 많은 일이 지나갔고, 인생의 전환점이 된 시기다.정리도 하고 반성도 할 겸 톺아보기로 했다. 블로그 글을 요즘 안써서 쓰려는 것은 아니다. ※ 생각나는대로 계속 수정되는 글입니다.정든 첫 회사 퇴사 16년 9월부터 다녔던 첫 회사를 1월 31일자로 관뒀다. 자체적으로 번아웃 상태이기도 했고, 올해 상반기 안에는 무조건 병역특례를 진행해야했기...","categories": [],
+        "tags": ["회고록"],
+        "url": "http://localhost:4000/2018/12/31/year-end-post.html"
+      },{
+        "title": "[2019년 계획서] 하고 싶은게 많아서 얼마나 이루나 확인해보기 위해 작성하는 계획서",
+        "excerpt":"사람의 욕심은 밑도 끝도 없다 회고록 작성하기 무섭게 벌써 올해의 계획을 너무 많이 그리고 있어서 내 스스로 얼마나 지키는 지, 또 얼마나 무참히 깨질지 궁금해서 작성해보기로 했다. 마침 또 한 해의 첫 날이니 이보다 좋은 날이 있을까 체지방 감소와 근육량 증가 웬만한 사람들이 매년 세우는 계획 1. 하지만 본인쟝은 9월부터...","categories": [],
+        "tags": ["계획"],
+        "url": "http://localhost:4000/2019/01/01/year-start-post.html"
+      },{
+        "title": "인공지능, 머신러닝, 딥러닝 뭐가 다른거야?",
+        "excerpt":"요즘 뉴스를 보면 인공 지능이 너무 자주 보인다. 2016년 알파고의 등장 이후, 미디어에서 인공 지능과 관련된 뉴스들이 두드러지게 보도가 되고 있다. 몇 가지 간추려보자면 1) 테슬라와 현대 등 자동차 업계에서 주도하는 자율 주행 자동차2) 카카오톡이나 슬랙 등에 붙이는 챗봇3) KT 기가지니와 SKT 누구 등 음성을 인식하고 명령을 수행하는 음성 비서...","categories": ["AI"],
+        "tags": ["AI","인공지능","딥러닝","머신러닝","컬럼"],
+        "url": "http://localhost:4000/ai/2019/01/10/What-is-AI.html"
+      },{
+        "title": "블로그 생성",
+        "excerpt":"블로그를 만들어 봤습니다! 현재 소프트웨어계열 고등학교에 입학하는 03년 생이고 3년동안(?) 회고록 같은 것도 작성해보고 jekyll을 이용하여 블로그를 만들어봅니다. ","categories": [],
+        "tags": ["blog"],
+        "url": "http://localhost:4000/2019/01/27/opene-blog.html"
+      }]

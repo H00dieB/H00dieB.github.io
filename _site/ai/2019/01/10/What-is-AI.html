@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<!--
+    Basically Basic Jekyll Theme 1.4.1
+    Copyright 2017-2018 Michael Rose - mademistakes.com | @mmistakes
+    Free for personal and commercial use under the MIT license
+    https://github.com/mmistakes/jekyll-basically-theme/blob/master/LICENSE
+-->
+<html lang="en-US" class="no-js">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+    <title>인공지능, 머신러닝, 딥러닝 뭐가 다른거야?</title>
+    <meta name="description" content="요즘 뉴스를 보면 인공 지능이 너무 자주 보인다.">
+    <link rel="canonical" href="http://localhost:4000/ai/2019/01/10/What-is-AI.html">
+  
+
+  <script>
+    /* Cut the mustard */
+    if ( 'querySelector' in document && 'addEventListener' in window ) {
+      document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + 'js';
+    }
+  </script>
+
+  <link rel="stylesheet" href="/assets/stylesheets/main.css">
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,600,600i">
+  
+
+  
+    
+    <link rel="alternate" type="application/atom+xml" title="H00die&#39;s Blog" href="/feed.xml">
+  
+</head>
+
+
+  <body class="layout--post 인공지능-머신러닝-딥러닝-뭐가-다른거야">
+
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#primary-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+
+    <div class="sidebar-toggle-wrapper">
+      
+
+      <button class="toggle navicon-button larr" type="button">
+        <span class="toggle-inner">
+          <span class="sidebar-toggle-label visually-hidden">Menu</span>
+          <span class="navicon"></span>
+        </span>
+      </button>
+    </div>
+
+    <div id="sidebar" class="sidebar">
+      <div class="inner">
+        <nav id="primary-nav" class="site-nav" itemscope itemtype="http://schema.org/SiteNavigationElement" aria-label="Main navigation">
+  <ul id="menu-main-navigation" class="menu">
+    <!-- Home link -->
+    <li class="menu-item">
+      <a href="/" itemprop="url">
+        <span itemprop="name">Home</span>
+      </a>
+    </li>
+
+    <!-- site.pages links -->
+    
+    
+
+    
+      
+      
+    
+  </ul>
+</nav>
+
+        <ul class="contact-list">
+  
+    <li>
+      <a href="mailto:your-email@example.com">
+        <span class="icon icon--email"><svg xmlns="http://www.w3.org/2000/svg" viewBox="313.1 3.7 16 16"><path d="M318.5 8.9c0-.2.2-.4.4-.4h4.5c.2 0 .4.2.4.4s-.2.4-.4.4h-4.5c-.3 0-.4-.2-.4-.4zm.4 2.1h4.5c.2 0 .4-.2.4-.4s-.2-.4-.4-.4h-4.5c-.2 0-.4.2-.4.4s.1.4.4.4zm3.5 1.2c0-.2-.2-.4-.4-.4h-3.1c-.2 0-.4.2-.4.4s.2.4.4.4h3.1c.2.1.4-.1.4-.4zm-1.5-8.4l-1.7 1.4c-.2.1-.2.4 0 .6s.4.2.6 0l1.4-1.2 1.4 1.2c.2.1.4.1.6 0s.1-.4 0-.6l-1.7-1.4c-.3-.1-.5-.1-.6 0zm7.8 6.2c.1.1.1.2.1.3v7.9c0 .8-.7 1.5-1.5 1.5h-12.5c-.8 0-1.5-.7-1.5-1.5v-7.9c0-.1.1-.2.1-.3l1.6-1.3c.2-.1.4-.1.6 0s.1.4 0 .6l-1.2 1 1.8 1.3v-4c0-.6.5-1.1 1.1-1.1h7.5c.6 0 1.1.5 1.1 1.1v4l1.8-1.3-1.2-1c-.2-.1-.2-.4 0-.6s.4-.2.6 0l1.6 1.3zm-11.6 2.2l4 2.8 4-2.8V7.6c0-.1-.1-.2-.2-.2h-7.5c-.1 0-.2.1-.2.2v4.6zm10.9-1l-4.7 3.4 3.4 2.6c.2.1.2.4.1.6-.1.2-.4.2-.6.1l-3.6-2.8-1.2.8c-.1.1-.3.1-.5 0l-1.2-.8-3.6 2.8c-.2.1-.4.1-.6-.1-.1-.2-.1-.4.1-.6l3.4-2.6-4.7-3.4v7.1c0 .4.3.6.6.6h12.5c.4 0 .6-.3.6-.6v-7.1z"/></svg></span>
+        <span class="label">Email</span>
+      </a>
+    </li>
+  
+
+  
+    <li><a href="https://github.com/jekyll">
+  <span class="icon icon--github"><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M8 0C3.58 0 0 3.582 0 8c0 3.535 2.292 6.533 5.47 7.59.4.075.547-.172.547-.385 0-.19-.007-.693-.01-1.36-2.226.483-2.695-1.073-2.695-1.073-.364-.924-.89-1.17-.89-1.17-.725-.496.056-.486.056-.486.803.056 1.225.824 1.225.824.714 1.223 1.873.87 2.33.665.072-.517.278-.87.507-1.07-1.777-.2-3.644-.888-3.644-3.953 0-.873.31-1.587.823-2.147-.09-.202-.36-1.015.07-2.117 0 0 .67-.215 2.2.82.64-.178 1.32-.266 2-.27.68.004 1.36.092 2 .27 1.52-1.035 2.19-.82 2.19-.82.43 1.102.16 1.915.08 2.117.51.56.82 1.274.82 2.147 0 3.073-1.87 3.75-3.65 3.947.28.24.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.14.46.55.38C13.71 14.53 16 11.53 16 8c0-4.418-3.582-8-8-8"/></svg></span>
+  <span class="label">GitHub</span>
+</a>
+</li>
+  
+
+  
+
+  <li>
+    
+      <a href="/feed.xml" title="Atom Feed">
+        <span class="icon icon--rss"><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M12.8 16C12.8 8.978 7.022 3.2 0 3.2V0c8.777 0 16 7.223 16 16h-3.2zM2.194 11.61c1.21 0 2.195.985 2.195 2.196 0 1.21-.99 2.194-2.2 2.194C.98 16 0 15.017 0 13.806c0-1.21.983-2.195 2.194-2.195zM10.606 16h-3.11c0-4.113-3.383-7.497-7.496-7.497v-3.11c5.818 0 10.606 4.79 10.606 10.607z"/></svg></span>
+        <span class="label">Subscribe</span>
+      </a>
+    
+  </li>
+</ul>
+
+      </div>
+    </div>
+
+    <div class="canvas">
+      <div class="wrapper">
+        
+
+<header id="masthead">
+  <div class="inner">
+    <div class="title-area">
+      
+        <p class="site-title">
+          <a href="/">
+            
+            <span>H00die&#39;s Blog</span>
+          </a>
+        </p>
+      
+    </div>
+  </div>
+</header>
+
+        <div class="initial-content">
+          <header class="intro">
+  
+
+  <div class="inner">
+    <div class="intro-text">
+      <h1 id="page-title" class="intro-title">인공지능, 머신러닝, 딥러닝 뭐가 다른거야?
+</h1>
+      
+
+      
+        
+
+        <p class="entry-meta">
+          <span class="byline-item">by devsaka</span><span class="byline-item"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="379 72 16 16"><g><g><path fill="none" d="M380.8,86.7h12.3v-8.8h-12.3V86.7z M389.5,78.8h1.7v1.4h-1.7V78.8z M389.5,81.3h1.7v1.4h-1.7V81.3z M389.5,83.8h1.7v1.4h-1.7V83.8z M386.1,78.8h1.7v1.4h-1.7V78.8z M386.1,81.3h1.7v1.4h-1.7V81.3z M386.1,83.8h1.7v1.4h-1.7V83.8z M382.8,78.8h1.7v1.4h-1.7V78.8z M382.8,81.3h1.7v1.4h-1.7V81.3z M382.8,83.8h1.7v1.4h-1.7V83.8z"/><polygon fill="none" points="384.7 75.1 383.4 75.1 383.4 74.3 380.8 74.3 380.8 76.6 393.2 76.6 393.2 74.3 390.6 74.3 390.6 75.1 389.3 75.1 389.3 74.3 384.7 74.3"/><rect x="382.8" y="78.8" width="1.7" height="1.4"/><rect x="386.1" y="78.8" width="1.7" height="1.4"/><rect x="389.5" y="78.8" width="1.7" height="1.4"/><rect x="382.8" y="81.3" width="1.7" height="1.4"/><rect x="386.1" y="81.3" width="1.7" height="1.4"/><rect x="389.5" y="81.3" width="1.7" height="1.4"/><rect x="382.8" y="83.8" width="1.7" height="1.4"/><rect x="386.1" y="83.8" width="1.7" height="1.4"/><rect x="389.5" y="83.8" width="1.7" height="1.4"/><path d="M383.4,72v1.1h-3.8V88h14.9V73.1h-3.8V72h-1.3v1.1h-4.7V72H383.4z M393.2,86.7h-12.3v-8.8h12.3L393.2,86.7L393.2,86.7z M389.3,74.3v0.8h1.3v-0.8h2.5v2.3h-12.3v-2.3h2.5v0.8h1.3v-0.8H389.3z"/></g></g></svg></span><time datetime="2019-01-10T19:01:30+09:00">January 10, 2019</time></span>
+        </p>
+      
+
+      
+
+      
+    </div>
+  </div>
+</header>
+
+
+<main id="main" class="page-content" aria-label="Content">
+  <div class="inner">
+    <article class="entry-wrap">
+      <div class="entry-content">
+        <h2 id="요즘-뉴스를-보면-인공-지능이-너무-자주-보인다">요즘 뉴스를 보면 인공 지능이 너무 자주 보인다.</h2>
+
+<p>2016년 알파고의 등장 이후, 미디어에서 인공 지능과 관련된 뉴스들이 두드러지게 보도가 되고 있다. 몇 가지 간추려보자면</p>
+
+<p>1) 테슬라와 현대 등 자동차 업계에서 주도하는 <strong>자율 주행 자동차</strong><br />
+2) 카카오톡이나 슬랙 등에 붙이는 <strong>챗봇</strong><br />
+3) KT 기가지니와 SKT 누구 등 음성을 인식하고 명령을 수행하는 <strong>음성 비서</strong></p>
+
+<p>등 다양한 산업에서 이용되고 있다. 필자도 이러한 흐름에 몸을 맡겨 최근에 인공지능 공부를 시작했다. 인공지능 공부를 하기 위해 알아보고 있을 때, 머신러닝과 딥러닝이 어떤 차이를 가지고 있는 지 알아보게 되었고 이를 정리하기로 했다.</p>
+
+<h2 id="인공-지능과-머신-러닝">인공 지능과 머신 러닝</h2>
+
+<p>인공 지능(Artificial Intelligence, AI)이라는 개념은 1956년 미국 다트머스 대학에 있던 존 매카시 교수가 개최한 다트머스 회의에서 처음 등장했으며, 최근 몇 년 사이 폭발적으로 성장하고 있다. 특히 2015년 이후 신속하고 강력한 병렬 처리 성능을 제공하는 GPU의 도입으로 더욱 가속화되고 있다. 갈수록 폭발적으로 늘어나고 있는 저장 용량과 이미지, 텍스트, 매핑 데이터 등 모든 영역의 데이터가 범람하게 된 ‘빅데이터’ 시대의 도래도 이러한 성장세에 큰 영향을 미쳤다.<br /></p>
+
+<p>1956년 당시 인공 지능의 선구자들이 “컴퓨터가 ‘생각’할 수 있는가?”라는 질문을 하면서 시작되었다. 이 질문의 답은 오늘날에도 여전히 찾고 있다. 이 분야에 대한 간결한 정의는 <strong>보통의 사람이 수행하는 지능적인 작업을 자동화하기 위한 연구 활동</strong>이다. 이처럼 인공지능은 머신러닝과 딥러닝을 포괄하는 종합적인 분야이다.</p>
+
+<p>아주 오랜 기간 동안 많은 전문가는 프로그래머들이 명시적인 규칙을 충분하게 많이 만들어 지식을 다루면 인간 수준의 인공 지능을 만들 수 있다고 믿었는데, 이러한 접근 방법을 <strong>심볼릭 AI</strong>라고 한다. 이 방법은 1950년대부터 1980년대까지 AI 분야의 지배적인 패러다임이었다. 하지만 체스 게임과 같이 잘 정의된 논리적인 문제를 푸는데는 적합하다는 것이 증명되었지만, 이미지 분류, 음성 인식, 언어 번역과 같은 복잡하고 불분명한 문제를 해결하기 위한 명확한 규칙을 찾는 것에는 적합하지 않았다. 이러한 심볼릭 AI를 대체하기 위해 나온 방법이 바로 <strong>머신 러닝(Machine Learning)</strong> 이다.</p>
+
+<p>머신 러닝은 기본적으로 알고리즘을 이용해 데이터를 분석하고, 분석을 통해 학습하며, 학습한 내용을 기반으로 판단이나 예측을 한다. 따라서 궁극적으로는 의사 결정 기준에 대한 구체적인 지침을 소프트웨어에 직접 코딩해 넣는 것이 아닌, 대량의 데이터와 알고리즘을 통해 컴퓨터 그 자체를 ‘학습’시켜 작업 수행 방법을 익히는 것을 목표로 한다.</p>
+
+<p>현재 머신 러닝은 컴퓨터 비전 등의 분야에서 큰 성과를 이뤄내고 있으나, 구체적인 지침이 아니더라도 인공 지능을 구현하는 과정 전반에 <strong>일정량의 코딩 작업이 수반된다는 한계점에 봉착하기도 했다.</strong> 가령 머신 러닝 시스템을 기반으로 정지 표지판의 이미지를 인식할 경우, 개발자는 물체의 시작과 끝 부분을 프로그램으로 식별하는 경계 감지 필터, 물체의 면을 확인하는 형상 감지, ‘S-T-O-P’와 같은 문자를 인식하는 분류기 등을 직접 코딩으로 제작해야 한다. 이처럼 머신 러닝은 ‘코딩’된 분류기로부터 이미지를 인식하고, 알고리즘을 통해 정지 표지판을 ‘학습’하는 방식으로 작동된다.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>머신러닝은 개념으로써, 컴퓨터가 스스로 학습하는 것을 말한다.
+</code></pre></div></div>
+
+<h2 id="딥-러닝">딥 러닝</h2>
+
+<p>초기 머신 러닝 연구자들이 만들어 낸 또 다른 알고리즘인 <strong>인공 신경망(Artificial Neural Network)</strong> 에 영감을 준 것은 인간의 뇌가 지닌 생물학적 특성, 특히 뉴런의 연결 구조였다. 그러나 물리적으로 근접한 어떤 뉴런이든 상호 연결이 가능한 뇌와는 달리, 인공 신경망은 레이어 연결 및 데이터 전파 방향이 일정하다.</p>
+
+<p><strong>딥 러닝(Deep Learning)</strong> 은 인공신경망에서 발전한 형태의 인공 지능으로, 뇌의 뉴런과 유사한 정보 입출력 계층을 활용해 데이터를 학습한다. 그러나 기본적인 신경망조차 굉장한 양의 연산을 필요로 하는 탓에 딥러닝의 상용화는 초기부터 난관에 부딪혔다. 하지만 2012년 이후에는 하드웨어 성능의 폭발적 향상, 알고리즘 향상, 인터넷 성장에 따른 데이터셋 수집의 용이성 등으로 인해 진정한 딥러닝 기반 인공 지능의 등장을 불러왔다.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>딥러닝으로 대표되는 인공신경망은 머신러닝을 구현하는 기술 중 하나.
+</code></pre></div></div>
+
+<h2 id="정리하자면">정리하자면</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>인공지능 &gt; 머신러닝 &gt; 딥러닝
+</code></pre></div></div>
+
+<h2 id="참고-문헌-및-서적">참고 문헌 및 서적</h2>
+<ul>
+  <li><a href="https://blogs.nvidia.co.kr/2016/08/03/difference_ai_learning_machinelearning/">인공 지능과 머신 러닝, 딥 러닝의 차이점을 알아보자, Nvidia</a></li>
+  <li>케라스 창시자에게 배우는 딥러닝, 프랑소와 숄레</li>
+  <li>골빈해커의 3분 딥러닝 텐서플로맛, 김진중</li>
+</ul>
+
+      </div>
+      
+    </article>
+  </div>
+</main>
+
+        </div>
+
+        <div class="search-content">
+          <div class="inner">
+  
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer" class="site-footer">
+  <div class="inner">
+    <div class="copyright">
+      
+        <p>&copy; 2019 H00die's Blog.</p>
+      
+    </div>
+  </div>
+</footer>
+
+    
+
+<script async src="/assets/javascripts/main.js"></script>
+
+
+
+
+  </body>
+
+</html>
