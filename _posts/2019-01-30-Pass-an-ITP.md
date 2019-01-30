@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: "[2019 계획서 시리즈] 정보처리기능사 필기 합격"
-data:  2019-01-01
+data:  2019-01-30
 author: H00die
 categories:
 tags:
