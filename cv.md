@@ -2,7 +2,7 @@
 title: Curriculum
 layout: cv
 actions:
-  - label: "Additional laterF"
+  - label: "Additional later"
     icon: pdf
     url: "#"
 ---
