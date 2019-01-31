@@ -17,30 +17,30 @@ cover:
 ## 센터의 외/내부
 솔직히 말하겠다. 내가 간 곳은 가산디지털단지역 근처에 있는 한성컴퓨터 수리센터인데, 외관상으로는 공장이다. 누가 이곳이 본사라고 생각하겠나, 근데 외관이 공장인게 당연한 것이다. 우리가 아는 대기업 처럼 만드는 곳을 따로 운영하는 것 같지 않고, 부품을 수급해서 본사에서 만든 후 바로 배송하기 떄문에 본사 정문앞으로 들어가게 되면 온갖 한성컴퓨터의 제품과 택배회사 차량이 놓여 있었다.
 
-![image-center]({{ site.url }}{{ site.baseurl }}/assets/images/ITP/Pic1.jpg){: .align-center}
+![image-center]({{ site.url }}{{ site.baseurl }}assets/images/ITP/Pic1.jpg){: .align-center}
 
 이 사진은 본사 정문 사진이다. 고객센터, 즉 A/S센터를 들어가는 길에는 이렇게 생겼다.
 
-![image-center]({{ site.url }}{{ site.baseurl }}/assets/images/ITP/Pic2.jpg){: .align-center}
+![image-center]({{ site.url }}{{ site.baseurl }}assets/images/ITP/Pic2.jpg){: .align-center}
 
 입구는 저렇게 생겼지만. A/S센터는 저 문을 들어가고 나서 계단으로 2층으로 가서 오른쪽에 있는 문으로 들어가면 수리센터가 위치 해있다.
 
-![image-center]({{ site.url }}{{ site.baseurl }}/assets/images/ITP/Pic3.jpg){: .align-center}
+![image-center]({{ site.url }}{{ site.baseurl }}assets/images/ITP/Pic3.jpg){: .align-center}
 
-![image-center]({{ site.url }}{{ site.baseurl }}/assets/images/ITP/Pic3-1.jpg){: .align-center}
+![image-center]({{ site.url }}{{ site.baseurl }}assets/images/ITP/Pic3-1.jpg){: .align-center}
 
 들어가면 앞에 한성제품의 의자와 접수하는 곳이 저렇게 나와있다.
 
-![image-center]({{ site.url }}{{ site.baseurl }}/assets/images/ITP/Pic4.jpg){: .align-center}
+![image-center]({{ site.url }}{{ site.baseurl }}assets/images/ITP/Pic4.jpg){: .align-center}
 
 접수하는 곳 옆에는 한성제품의 모니터, 외장그래픽카드, 노트북등을 시연해볼 수 있게 되어있고 그 옆에는 개인이 제품을 점검할 수 있게끔 각 시리즈별로 충전선이 연결되어 있다.
 
-![image-center]({{ site.url }}{{ site.baseurl }}/assets/images/ITP/Pic6.jpg){: .align-center}
+![image-center]({{ site.url }}{{ site.baseurl }}assets/images/ITP/Pic6.jpg){: .align-center}
 
 ## 접수 방법
 제품을 접수하려면 접수를 하기위한 서류를 앞에 나와있는 예처럼 작성하고, 번호표를 뽑고 접수를 한다.
 
-![image-center]({{ site.url }}{{ site.baseurl }}/assets/images/ITP/Pic5.jpg){: .align-center}
+![image-center]({{ site.url }}{{ site.baseurl }}assets/images/ITP/Pic5.jpg){: .align-center}
 
 접수를 하게 되면 앞에 있는 직원 분 께서 증상을 한번더 여쭤 보시고 테스트를 한후 접수표를 준다. 이 접수표는 잊어버리면 되찾을때 불편 할 수있으니 안 잊어버릴수 있으니 잘 보관하고 있는 걸 추천한다.
 
