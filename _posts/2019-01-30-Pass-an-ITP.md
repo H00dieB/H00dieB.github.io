@@ -29,7 +29,7 @@ cover:
 ## 그래서 결과는요?
 으에, 그래서 합격했습니다. 점수가 이렇게 높게 나올줄 몰랐는데 90점대 성적이 나왔다. CBT의 좋은 점은 시험을 보고 답안을 제출하면 바로 결과가 나온다는 거다. 제일 쫄리는 순간이 답안을 제출하는 시간이다. 정말로 답안 제출하는 것이 고통스러울줄 몰랐다.
 
-![image-center]({{ site.url }}{{ site.baseurl }}assets/images/ITP/Pic2.jpg){: .align-center}
+![image-center]({{ site.url }}{{ site.baseurl }}assets/images/ITP/Pic2.PNG){: .align-center}
 
 ## 한성컴퓨터 방문기
 예, 끝나고 한성컴퓨터 AS센터 갔다왔습니다. 다음에 쓸게요.
